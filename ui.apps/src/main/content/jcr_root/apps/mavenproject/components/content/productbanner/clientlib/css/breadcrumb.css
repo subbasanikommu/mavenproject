@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title_aqua {
+    background-color: aqua;
+}
+
+.title_bisque {
+    background-color: bisque;
+}
+
+.title_gold {
+    background-color: gold;
+}
+
+.title_dimgray {
+    background-color: dimgray;
+}
+.cmp-title__link{
+text-decoration: none;
+}
