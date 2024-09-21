@@ -2,13 +2,14 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
-    <rep:policy/>
     <wcm jcr:primaryType="nt:unstructured">
         <foundation jcr:primaryType="nt:unstructured">
             <components jcr:primaryType="nt:unstructured">
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <content-default
                         jcr:description="Policy for editable layout containers"
+                        jcr:lastModified="{Date}2024-09-21T13:07:51.608+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="mavenproject Default"
                         sling:resourceType="wcm/core/components/policy/policy"
@@ -46,6 +47,54 @@
                     </form-container>
                 </container>
             </form>
+            <content jcr:primaryType="nt:unstructured">
+                <search jcr:primaryType="nt:unstructured"/>
+                <tabs jcr:primaryType="nt:unstructured"/>
+                <productbanner jcr:primaryType="nt:unstructured">
+                    <policy_1726904627077
+                        jcr:lastModified="{Date}2024-09-21T14:59:24.961+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Title BG color"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Color"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="title_gold"
+                                        cq:styleId="1726910194111"
+                                        cq:styleLabel="Title BG color gold"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="title_dimgray"
+                                        cq:styleId="1726910199553"
+                                        cq:styleLabel="Title BG color dimgray"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                            <item1
+                                cq:styleGroupLabel="bg color"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="title_aqua"
+                                        cq:styleId="1726910926415"
+                                        cq:styleLabel="Title BG color aqua"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="title_bisque"
+                                        cq:styleId="1726910939541"
+                                        cq:styleLabel="Title BG color bisque"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item1>
+                        </cq:styleGroups>
+                    </policy_1726904627077>
+                </productbanner>
+            </content>
         </components>
     </mavenproject>
 </jcr:root>
