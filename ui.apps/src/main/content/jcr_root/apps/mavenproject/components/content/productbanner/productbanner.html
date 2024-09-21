@@ -5,4 +5,5 @@ data-sly-call="${clientLib.all @ categories='mavenproject.productbanner'}" data-
 
      data-sly-test.text="${properties.title}">
     <h1 class="cmp-title__text" data-sly-element="${properties.type}"><a data-sly-unwrap="${!properties.linkURL || properties.linkDisabled}" class="cmp-title__link" href="${properties.linkURL}.html">${text}</a></h1>
+    <div class="description_des">"${properties.description}"</div>
 </div>
