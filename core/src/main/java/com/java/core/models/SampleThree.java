@@ -51,4 +51,24 @@ public class SampleThree implements SampleThreeMulti{
         return bookDetailsMap;
     }
 
+    @Override
+    public List<SampleThreeBean> getMultifieldBook() {
+        List<SampleThreeBean> bookDetailsBean = new ArrayList<>();
+        try {
+          Resource bookDetailBean =  componentResource.getChild("multifieldBook");
+          if (bookDetailBean !=null){
+              for (Resource bookBean : bookDetailBean.getChildren()){
+                  LOG.info("\n PATH Bean {}",bookBean.getPath());
+                  LOG.info("\n BEAN PRO {}",bookBean.getValueMap().get("bookname", String.class));
+                  LOG.info("\n BEAN PRO {}",bookBean.getValueMap().get("publishdate", Date.class));
+
+                  bookDetailsBean.add(new SampleThreeBean(bookBean));
+              }
+          }
+        }catch (Exception e){
+            LOG.info("\n ERROR while getting book Detail With Bean", e.getMessage());
+        }
+        return bookDetailsBean;
+    }
+
 }

@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Model(adaptables = SlingHttpServletRequest.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Model(adaptables = {SlingHttpServletRequest.class, Resource.class},defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class SampleThreeMultiValue {
     private static final Logger LOG = LoggerFactory.getLogger(SampleThreeMultiValue.class);
     @SlingObject
@@ -27,10 +27,16 @@ public class SampleThreeMultiValue {
     private String name;
     @ChildResource
     Resource Resource;
-    List<Map<String,String>> multifieldText;
 
+    List<Map<String,String>> multifieldText;
+    @ChildResource
+    private List<SampleThreeMultiValueHelper> multifieldBook;
     public String getName() {
         return name;
+    }
+
+    public List<SampleThreeMultiValueHelper> getMultifieldBook() {
+        return multifieldBook;
     }
 
     public List<Map<String, String>> getMultifieldText() {

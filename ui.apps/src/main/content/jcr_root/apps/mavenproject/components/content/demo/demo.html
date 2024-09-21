@@ -1,0 +1,24 @@
+<h2><strong>Using model</strong></h2>
+<div data-sly-use.model="com.java.core.models.DemoModelImpl">
+    <p>Continents</p>
+
+    <!--/* Iterate over continents */-->
+    <ul data-sly-list.continent="${model.continents}">
+        <li>Name: ${continent.name}</li>
+        <li>Countries:
+
+            <!--/* Iterate over countries */-->
+            <ul data-sly-list.country="${continent.countries}">
+                <li>Name: ${country.name}</li>
+                <li>Code: ${country.code}</li>
+            </ul>
+        </li>
+
+    </ul>
+    <p>Products</p>
+
+    <!--/* Iterate over continents */-->
+    <ul data-sly-list.product="${model.products}">
+        <li>Name: ${product.name}</li>
+    </ul>
+</div>
