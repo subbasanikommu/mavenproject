@@ -78,6 +78,12 @@
                                                     sling:resourceType="granite/ui/components/foundation/renderconditions/simple"
                                                     expression="${!cqDesign.linkDisabled}"/>
                                             </linkURL>
+                                            <description
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                fieldDescription="Leave empty to use the page description."
+                                                fieldLabel="Description"
+                                                name="./description"/>
                                         </items>
                                     </column>
                                 </items>
