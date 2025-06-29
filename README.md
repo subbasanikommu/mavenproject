@@ -33,6 +33,10 @@ Or alternatively
 Or to deploy only the bundle to the author, run
 
     mvn clean install -PautoInstallBundle
+    
+Or dependency: org.apache.commons:commons-imaging:jar:1.0-R1534292 (test)
+
+    mvn clean install -PautoInstallPackage -Padobe-public
 
 ## Testing
 
