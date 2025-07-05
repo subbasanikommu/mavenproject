@@ -1,0 +1,137 @@
+.hero-title{
+    font-family: LatoBold;
+    font-size: 50px;
+}
+.subtitle{
+    font-family: LatoBold;
+    font-size: 30px;
+}
+
+.tag-text{
+    font-family: LatoBold;
+    font-size: 12px;
+}
+
+.body-text{
+    font-family: LatoRegular;
+    font-size: 16px;
+    color: var(--Black);
+}
+
+.body-min-text{
+    font-family: LatoRegular;
+    font-size: 14px;
+    color: var(--Black);
+}
+.heading,
+.heading-font{
+    font-family: LatoHeavy;
+    font-size: 24px;
+    color: var(--Black);
+}
+
+h1{
+    font-family: LatoHeavy;
+    font-size: 24px;
+    color: var(--Black);
+    margin: 0px;
+}
+
+h2{
+    font-family: LatoHeavy;
+    font-size: 20px;
+    margin: 0px;
+    color: var(--Black);
+}
+
+h3{
+    font-family: LatoHeavy;
+    font-size: 18px;
+    margin: 0px;
+    color: var(--Black);
+}
+
+h4{
+    font-family: LatoBold;
+    font-size: 18px;
+    margin: 0px;
+    color: var(--Black);
+}
+
+h5{
+    font-family: LatoBold;
+    font-size: 16px;
+    margin: 0px;
+    color: var(--Black);
+}
+
+h6{
+    font-family: LatoRegular;
+    font-size: 16px;
+    margin: 0px;
+    color: var(--Black);
+}
+
+p{
+    font-family: LatoRegular;
+    font-size: 16px;
+    color: var(--Black);
+}
+
+@media only screen and (max-width: 480px) {
+        
+    .hero-title{
+        font-size: 24px;
+    }
+    .subtitle{
+        font-family: LatoMedium;
+        font-size: 16px;
+    }
+
+    .tag-text{
+        font-size: 10px;
+    }
+
+    .body-text{
+        font-size: 14px;
+    }
+
+    .body-min-text{
+        font-size: 12px;
+    }
+
+    .heading{
+        font-size: 16px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    h3{
+        font-family: LatoBold;
+        font-size: 14px;
+    }
+
+    h4{
+        font-family: LatoBold;
+        font-size: 12px;
+    }
+
+    h5{
+        font-family: LatoBold;
+        font-size: 12px;
+    }
+
+    h6{
+        font-size: 14px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+  }

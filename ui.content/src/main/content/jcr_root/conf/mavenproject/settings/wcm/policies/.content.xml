@@ -2,6 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
+    <rep:policy/>
     <wcm jcr:primaryType="nt:unstructured">
         <foundation jcr:primaryType="nt:unstructured">
             <components jcr:primaryType="nt:unstructured">
@@ -95,6 +96,19 @@
                     </policy_1726904627077>
                 </productbanner>
             </content>
+            <structure jcr:primaryType="nt:unstructured">
+                <page jcr:primaryType="nt:unstructured">
+                    <policy_1751682806765
+                        jcr:lastModified="{Date}2025-07-05T08:04:46.188+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Reviews"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="[bajajfinserv.revamp,bajajfinserv.slicklibrary,BajajTouchUI-Validation]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1751682806765>
+                </page>
+            </structure>
         </components>
     </mavenproject>
 </jcr:root>

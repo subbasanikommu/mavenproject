@@ -1,0 +1,12 @@
+.displayRTEFeatures{
+    visibility: visible !important;
+}
+.rte-toolbar{
+    visibility: visible !important;
+}
+.coral-FixedColumn-column{
+    width: 100%;
+}
+.is-open{
+    left: 0px !important;
+}
