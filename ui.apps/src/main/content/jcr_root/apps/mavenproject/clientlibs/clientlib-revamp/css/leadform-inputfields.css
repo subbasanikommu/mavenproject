@@ -1,0 +1,92 @@
+.banner-lead {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+.banner-lead-input {
+    height: 50px;
+    background: var(--Super-silver);
+    border: none;
+    border-radius: 8px;
+    padding-left: 16px;
+}
+
+.banner-lead-input:focus {
+    outline: none;
+    background-color: var(--White);
+    border: 1px solid var(--Dark-blue);
+    animation-name: heightChange;
+    animation-duration: 0.5s;
+    height: 58px;
+}
+
+@keyframes heightChange {
+    from {height: 50px;}
+    to {height: 58px;}
+}
+
+.banner-lead-input:not(:placeholder-shown){
+    background-color: var(--White);
+    border: 1px solid var(--Gray);
+}
+
+.banner-lead-label {
+    position: absolute;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: var(--Stone);
+    padding-left: 16px;
+    font-weight: inherit;
+    font-size: 16px;
+    font-family: 'LatoRegular';
+    margin-bottom: 0px;
+}
+
+.banner-lead-input:not(:placeholder-shown) + .banner-lead-input-banner-lead-label,
+.banner-lead-input:focus + .banner-lead-input-banner-lead-label{
+    top: 3%;
+    right: 7%;
+    font-family: LatoRegular;
+    font-size: 12px;
+    z-index: 1;
+    background: var(--White);
+    padding: 0px 5px;
+    height: 20%;
+}
+
+.banner-lead-input.isValid {
+    background: #FFF 0% 0% no-repeat padding-box;
+    border: 1px solid #AAAAAA;
+    opacity: 1;
+}
+
+.banner-lead-input.isNotValid {
+    background: #FFF 0% 0% no-repeat padding-box;
+    border: 1px solid red;
+    opacity: 1;
+}
+
+.banner-lead-input:not(:placeholder-shown) + .banner-lead-label,
+.banner-lead-input:focus + .banner-lead-label{
+    top: -8px;
+    right: 8px;
+    font-family: LatoRegular;
+    font-size: 12px;
+    z-index: 1;
+    background: var(--White);
+    padding: 0px 5px;
+    height: 20%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}

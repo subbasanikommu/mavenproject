@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    dependencies="[bajajfinserv.slicklibrary]"
+    categories="[bajajfinserv.revamp]"
+    embed="[revamp.customContainer,bajajfinserv.paragraghRTE,bajajfinserv.breadcrumb,bajajfinserv.masterbutton,bajajfinserv.stickycta,bajajfinserv.trendingnews,bajajfinserv.imagewithlist,bajajfinserv.cardWithDetails,bajajfinserv.mastercontentexpandable,bajajfinserv.smallwidthaccordion,bajajfinserv.fullWidthAccordion,bajajfinserv.reviews,bajajfinserv.mobileDocker,bajajfinserv.faq,bajajfinserv.l2Navigation,bajajfinserv.bannerformnew,bajajfinserv.productBanner,bajajfinserv.partners,bajajfinserv.contextualfooter,bajajfinserv.firstfoldslider,bajajfinserv.iconWithContentComponent,bajajfinserv.calculator.bmicalculator,bajajfinserv.faq,bajajfinserv.explorebanner,bajajfinserv.needHelp,bajajfinserv.downloadapp,bajajfinserv.dncForm,bajajfinserv.staticCompare,bajajfinserv.productgrid,bajajfinserv.table,bajajfinserv.offersWidget]"/>

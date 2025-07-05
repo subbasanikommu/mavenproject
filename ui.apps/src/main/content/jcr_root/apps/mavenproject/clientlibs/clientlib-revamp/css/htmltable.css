@@ -1,0 +1,98 @@
+table {
+    width: 100%;
+    border: none !important;
+    border-collapse: collapse !important;
+    margin: 20px 0px 20px 0px;
+}
+tr, td, thead,tbody{
+    border: none !important;
+}
+tbody > tr:nth-child(even) {
+    background-color: var(--White);
+    border-radius: 20px;
+}
+
+tr > td {
+    padding: 20px 12px 20px 12px;
+    font-family: LatoRegular;
+    font-size: 14px;
+}
+td:first-child,
+th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+td:last-child,
+th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+thead > tr {
+    background-color: var(--Indigo-matt) ;
+}
+thead > tr:first-child  > td:first-child {
+  border-radius: 10px 0 0 0px;
+}
+thead > tr > td:first-child {
+    border-radius: 0;
+}
+
+thead > tr:first-child >  td:last-child {
+  border-radius: 0 10px 0px 0;
+}
+thead > tr >  td:last-child {
+    border-radius: 0 ;
+  }
+td > * {
+    text-align: left !important;
+}
+ul.unlist,.paragraphContainer ul{
+    list-style: none;
+    padding-left: 0px;
+    font-family: LatoRegular;
+    font-size: 14px;
+}
+
+ul > li.htList::before,.paragraphContainer ul > li::before{
+    content: " ";
+    display: inline-block; 
+    width: 12px;
+    height: 12px;
+    background:var(--Indigo-matt) 0 0 no-repeat;
+    border-radius: 50%;
+    top: 4.4px;
+    left: 0;
+    position: absolute;
+}
+
+ul > li.htList,.paragraphContainer ul > li {
+    padding-left: 20px;
+    position: relative;
+    margin-top: 12px;
+}
+ol.odlist, .paragraphContainer ol{
+    padding-left: 15px;
+}
+
+ol > li.htList , .paragraphContainer ol > li{
+    list-style: decimal;
+    padding-left: 12px;
+    margin-top: 12px;
+}
+
+
+@media only screen and (max-width: 480px) {
+    table{
+        margin: 16px 0px 16px 0px;
+    }
+    ul > li.htList::before , .paragraphContainer ul > li::before{
+        width: 8px;
+        height: 8px;
+        font-family: LatoRegulat;
+        font-size: 12px;
+    }
+    ol > li.htList, .paragraphContainer ol > li{
+        padding-left: 8px;
+    }
+    tr > td {
+        padding: 16px 12px 16px 12px;
+    }
+}
