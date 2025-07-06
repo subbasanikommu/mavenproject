@@ -104,7 +104,7 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Reviews"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="[bajajfinserv.revamp,bajajfinserv.slicklibrary,BajajTouchUI-Validation]">
+                        clientlibs="[bajajfinserv.jquery,bajajfinserv.revamp,bajajfinserv.slicklibrary,BajajTouchUI-Validation]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_1751682806765>
                 </page>
