@@ -1,29 +1,40 @@
-<sly data-sly-use.reviews="${'com.java.core.models.ReviewsModel'}"
-    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html" />
-<sly data-sly-test.hasContent="${reviews.reviewsTitle}">
-    <section class="reviews-parent-div" id="${reviews.componentId}">
-        <div class="reviews-container-main componentSeperator">
-            <div class="reviews-head-title">
-                <h3 data-sly-element="${reviews.reviewsHeadingDropdown}">${reviews.reviewsTitle}</h3>
-            </div>
-            <div class="reviews-slider-wrapper">
-                <sly data-sly-list.reviewsMultiList="${reviews.reviewsMultifields}">
-                    <div
-                        class="reviews-grid ${reviewsMultiList.cardName && !reviewsMultiList.cardTitle ? 'container-spacer' : ''}">
-                        <div class="spacer" data-sly-test="${reviewsMultiList.cardTitle}">
-                            <div class="review-tag">
-                                <div class="reviews-title tag-text">${reviewsMultiList.cardTitle}</div>
-                            </div>
-                        </div>
-                        <div class="reviews-sub-title body-text">${reviewsMultiList.cardDescription}</div>
-                        <sly data-sly-test="${reviewsMultiList.cardName}">
-                            <div class="reviews-divider"></div>
-                            <div class="reviews-name body-min-text">${reviewsMultiList.cardName}</div>
-                        </sly>
-                    </div>
-                </sly>
-            </div>
-        </div>
-    </section>
+<!-- <sly data-sly-use.reviews="${'com.bajaj.bfl.core.models.ReviewsModel'}" 
+data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-test.hasContent="${reviews.reviewsTitle}"> -->
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='bajajfinserv.reviews'}"></sly>
 </sly>
-<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
+<section class="reviews-parent-div" id="${properties.componentId}">
+    <div class="reviews-container-main componentSeperator">
+        <div class="reviews-head-title">
+            <h3 data-sly-element="${properties.reviewsHeadingDropdown}">${properties.reviewsTitle}</h3>
+        </div>
+        <div class="reviews-slider-wrapper">
+            <sly data-sly-list.articleList="${resource.children}">
+                <sly data-sly-test="${articleList.name == 'reviewsMultifields'}">
+                    <sly data-sly-list.reviewsMultiList="${articleList.children}">
+                        <div class="reviews-grid ${reviewsMultiList.cardName}">
+                            <div class="spacer" data-sly-test="${reviewsMultiList.cardTitle}">
+                                <div class="review-tag">
+                                    <div class="reviews-title tag-text">${reviewsMultiList.cardTitle}</div>
+                                </div>
+                            </div>
+                            <div class="reviews-sub-title body-text">${reviewsMultiList.cardDescription}</div>
+                            <sly data-sly-test="${reviewsMultiList.cardName}">
+                                <div class="reviews-divider"></div>
+                                <div class="reviews-name body-min-text">${reviewsMultiList.cardName}</div>
+                            </sly>
+                        </div>
+                    </sly>
+                </sly>
+            </sly>
+        </div>
+    </div>
+</section>
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='bajajfinserv.reviews'}"></sly>
+</sly>
+<!-- </sly>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly> -->
